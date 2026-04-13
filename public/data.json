@@ -1,0 +1,147 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "picture": "https://i.pravatar.cc/150?img=1",
+        "email": "john@example.com",
+        "days_since_contact": 12,
+        "status": "overdue",
+        "tags": [
+            "college"
+        ],
+        "bio": "Met in university. Love hiking together.",
+        "goal": 14,
+        "next_due_date": "2025-07-20"
+    },
+    {
+        "id": 2,
+        "name": "Sarah Smith",
+        "picture": "https://i.pravatar.cc/150?img=2",
+        "email": "sarah@example.com",
+        "days_since_contact": 5,
+        "status": "on track",
+        "tags": [
+            "team mate"
+        ],
+        "bio": "Works in my office. Very supportive.",
+        "goal": 7,
+        "next_due_date": "2025-07-10"
+    },
+    {
+        "id": 3,
+        "name": "Michael Lee",
+        "picture": "https://i.pravatar.cc/150?img=3",
+        "email": "michael@example.com",
+        "days_since_contact": 20,
+        "status": "overdue",
+        "tags": [
+            "gym",
+            "buddy"
+        ],
+        "bio": "Gym partner. Keeps me motivated.",
+        "goal": 10,
+        "next_due_date": "2025-07-05"
+    },
+    {
+        "id": 4,
+        "name": "Emma Watson",
+        "picture": "https://i.pravatar.cc/150?img=4",
+        "email": "emma@example.com",
+        "days_since_contact": 2,
+        "status": "almost due",
+        "tags": [
+            "family"
+        ],
+        "bio": "Cousin. Very close relationship.",
+        "goal": 5,
+        "next_due_date": "2025-07-18"
+    },
+    {
+        "id": 5,
+        "name": "David Kim",
+        "picture": "https://i.pravatar.cc/150?img=5",
+        "email": "david@example.com",
+        "days_since_contact": 30,
+        "status": "on track",
+        "tags": [
+            "school",
+            "old friend"
+        ],
+        "bio": "Haven't talked in a while.",
+        "goal": 15,
+        "next_due_date": "2025-07-01"
+    },
+    {
+        "id": 6,
+        "name": "Olivia Brown",
+        "picture": "https://i.pravatar.cc/150?img=6",
+        "email": "olivia@example.com",
+        "days_since_contact": 8,
+        "status": "on track",
+        "tags": [
+            "neighbor"
+        ],
+        "bio": "Lives next door. Friendly chats often.",
+        "goal": 10,
+        "next_due_date": "2025-07-15"
+    },
+    {
+        "id": 7,
+        "name": "James Wilson",
+        "picture": "https://i.pravatar.cc/150?img=7",
+        "email": "james@example.com",
+        "days_since_contact": 18,
+        "status": "almost due",
+        "tags": [
+            "work",
+            "manager"
+        ],
+        "bio": "Former manager. Great mentor.",
+        "goal": 14,
+        "next_due_date": "2025-07-08"
+    },
+    {
+        "id": 8,
+        "name": "Sophia Martinez",
+        "picture": "https://i.pravatar.cc/150?img=8",
+        "email": "sophia@example.com",
+        "days_since_contact": 3,
+        "status": "on track",
+        "tags": [
+            "friend",
+            "travel"
+        ],
+        "bio": "Travel buddy. Loves adventures.",
+        "goal": 7,
+        "next_due_date": "2025-07-17"
+    },
+    {
+        "id": 9,
+        "name": "Daniel Garcia",
+        "picture": "https://i.pravatar.cc/150?img=9",
+        "email": "daniel@example.com",
+        "days_since_contact": 25,
+        "status": "on track",
+        "tags": [
+            "school"
+        ],
+        "bio": "Old school friend. Lost touch recently.",
+        "goal": 12,
+        "next_due_date": "2025-07-03"
+    },
+    {
+        "id": 10,
+        "name": "Ava Johnson",
+        "picture": "https://i.pravatar.cc/150?img=10",
+        "email": "ava@example.com",
+        "days_since_contact": 1,
+        "status": "on track",
+        "tags": [
+            "family",
+            "sister"
+        ],
+        "bio": "My sister. Talk almost every day.",
+        "goal": 3,
+        "next_due_date": "2025-07-19"
+    }
+]

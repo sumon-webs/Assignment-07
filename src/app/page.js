@@ -1,8 +1,12 @@
 
+import FriendsData from "@/components/FriendsData";
+import Hero from "@/components/Hero";
+
 export default function Home() {
   return (
     <div>
-      <h1>Hello from Home page</h1>
+      <Hero/>
+      <FriendsData/>
     </div>
   );
 }
