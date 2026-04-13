@@ -2,7 +2,7 @@ import FriendCard from "@/Ui/FriendCard";
 
 const FriendsData = async () => {
 
-    const res = await fetch("http://localhost:3000//data.json")
+    const res = await fetch("/data.json")
     const friendsData = await res.json()
 
 
