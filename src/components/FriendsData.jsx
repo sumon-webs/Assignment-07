@@ -5,7 +5,6 @@ const FriendsData = async () => {
     const res = await fetch("/data.json")
     const friendsData = await res.json()
 
-
     return (
         <div className="bg-base-200  ">
             <div className=" max-w-7xl mx-auto py-7 md:py-12 border-b">
