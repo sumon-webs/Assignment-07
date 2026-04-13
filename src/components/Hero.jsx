@@ -2,7 +2,7 @@ import HeroCard from "@/Ui/HeroCard";
 
 const Hero = () => {
     return (
-        <div className="bg-base-200 ">
+        <div className="">
             <div className="max-w-7xl mx-auto text-center space-y-2 md:space-y-3 py-6 md:py-10 border-b">
                 <h1 className=" font-bold text-2xl  md:text-4xl lg:text-5xl">Friends to keep close in your life</h1>
                 <p className=" text-gray-600">Your personal shelf of meaningful connections. Browse, tend, and nurture the <br />relationships that matter most.</p>
