@@ -1,12 +1,14 @@
 import FriendCard from "@/Ui/FriendCard";
-import fs from "fs/promises";
-import path from "path";
 
 const FriendsData = async () => {
-    const filePath = path.join(process.cwd(), "public/data.json");
+    const res = await fetch(
+        `${process.env.NEXT_PUBLIC_BASE_URL || ""}/data.json`,
+        {
+            cache: "no-store",
+        }
+    );
 
-    const jsonData = await fs.readFile(filePath, "utf-8");
-    const friendsData = JSON.parse(jsonData);
+    const friendsData = await res.json();
 
     return (
         <div className="bg-base-200">
