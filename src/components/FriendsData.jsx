@@ -1,19 +1,33 @@
-import FriendCard from "@/Ui/FriendCard";
-import friendsData from '@/../public/data.json';
+"use client";
 
-const FriendsData = async () => {
+import FriendCard from "@/Ui/FriendCard";
+import useFriends from "@/CustomHooks/FriendsHook";
+import { Grid } from "react-loader-spinner";
+
+const FriendsData = () => {
+    const { friends, loading } = useFriends();
+
+    if (loading) {
+        return (
+            <div className="flex justify-center items-center pt-43">
+                <Grid/>
+            </div>
+        );
+    }
 
     return (
-        <div className=" ">
-            <div className=" max-w-7xl mx-auto py-7 md:py-12 border-b">
-                <h3 className=" font-semibold text-2xl sm:text-3xl pb-5"> Your Friends</h3>
-                <div className=" grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8">
-                    {
-                        friendsData.map(friend => <FriendCard key={friend.id} friend={friend} />)
-                    }
-                </div>
+        <div className="max-w-7xl mx-auto py-7 md:py-12 border-b">
+            <h3 className="font-semibold text-2xl sm:text-3xl pb-5">
+                Your Friends
+            </h3>
+
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8">
+                {friends.map((friend) => (
+                    <FriendCard key={friend.id} friend={friend} />
+                ))}
             </div>
         </div>
     );
 };
+
 export default FriendsData;
