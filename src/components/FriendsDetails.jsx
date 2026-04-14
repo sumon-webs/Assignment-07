@@ -24,6 +24,10 @@ const FriendsDetails = ({ expectData }) => {
         next_due_date,
     } = expectData;
 
+    
+
+
+
     return (
         <div className="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-6 gap-6">
 
@@ -105,20 +109,20 @@ const FriendsDetails = ({ expectData }) => {
 
                     <div className="grid grid-cols-3 gap-4">
                         <button
-                            onClick={() => handleCall('Call',expectData)}
+                            onClick={() => handleCall('Call', expectData)}
                             className="flex flex-col justify-center items-center  bg-blue-100 cursor-pointer hover:bg-blue-200 py-3 rounded-lg transition">
                             <IoIosCall />
                             Call
                         </button>
                         <button
-                        onClick={() => handleCall('Text',expectData)}
-                        className="flex flex-col justify-center items-center  bg-green-100 cursor-pointer hover:bg-green-200 py-3 rounded-lg transition">
+                            onClick={() => handleCall('Text', expectData)}
+                            className="flex flex-col justify-center items-center  bg-green-100 cursor-pointer hover:bg-green-200 py-3 rounded-lg transition">
                             <MdOutlineTextsms />
                             Text
                         </button>
                         <button
-                        onClick={() => handleCall('Video',expectData)}
-                        className="flex flex-col justify-center items-center  bg-purple-100 cursor-pointer hover:bg-purple-200 py-3 rounded-lg transition">
+                            onClick={() => handleCall('Video', expectData)}
+                            className="flex flex-col justify-center items-center  bg-purple-100 cursor-pointer hover:bg-purple-200 py-3 rounded-lg transition">
                             <CiVideoOn />
                             Video
                         </button>

@@ -1,6 +1,7 @@
 "use client"
 
 import { createContext, useState } from "react";
+import { toast } from "react-toastify";
 
 export const FriendContext = createContext()
 
@@ -18,9 +19,9 @@ const FriendsContextProvider = ({ children }) => {
             };
 
             setTimeLinelData([...timeLinelData, newItem]);
-            alert("added");
+            toast.success(`${type} with ${expectData.name}`)
         } else {
-            alert("already have");
+            toast.warning("Already exist in timeline");
         }
     };
     const data = {

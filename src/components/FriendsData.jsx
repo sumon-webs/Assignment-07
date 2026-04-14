@@ -15,6 +15,7 @@ const FriendsData = () => {
         );
     }
 
+    
     return (
         <div className="max-w-7xl mx-auto py-7 md:py-12 border-b">
             <h3 className="font-semibold text-2xl sm:text-3xl pb-5">
