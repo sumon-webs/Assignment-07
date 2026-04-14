@@ -4,7 +4,7 @@ import { MdOutlineTextsms } from "react-icons/md";
 
 const TimeLineCard = ({ friend }) => {
     const { name, type } = friend
-    console.log(type)
+
     return (
         <div className="bg-white shadow-sm rounded-xl p-4 space-y-1">
             <p className="text-lg font-semibold flex items-center gap-2">
