@@ -24,7 +24,7 @@ const FriendsDetails = ({ expectData }) => {
         next_due_date,
     } = expectData;
 
-    
+
 
 
 
@@ -43,7 +43,7 @@ const FriendsDetails = ({ expectData }) => {
                     />
 
                     <h2 className="text-xl font-bold">{name}</h2>
-                    <p className="text-sm text-gray-500">{status}</p>
+                    <p className={`badge  rounded-full ${status === 'overdue' ? 'badge-error' : status === 'almost due' ? "badge-warning" : 'badge-success   '}`}>{status}</p>
 
                     <div className="flex flex-wrap justify-center gap-2">
                         {tags?.map((t, index) => (
