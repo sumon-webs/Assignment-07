@@ -98,7 +98,10 @@ const FriendsDetails = ({ expectData }) => {
                 </div>
 
                 <div className="bg-white shadow rounded-2xl p-6 space-y-2">
-                    <h3 className="text-lg font-semibold">Relationship Goal</h3>
+                    <div className=" flex justify-between">
+                        <h3 className="text-lg font-semibold">Relationship Goal</h3>
+                        <p className=" shadow-md bg-base-300 px-5 py-1 rounded-md font-semibold hover:-translate-y-1 hover:shadow-2xl cursor-pointer">Edit</p>
+                    </div>
                     <p className="text-gray-600">
                         Contact every <span className="font-bold">{goal}</span> days
                     </p>

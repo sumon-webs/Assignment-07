@@ -27,6 +27,7 @@ const FriendsContextProvider = ({ children }) => {
     const data = {
         timeLinelData,
         handleCall,
+        setTimeLinelData
     }
 
     return <FriendContext.Provider value={data}>
