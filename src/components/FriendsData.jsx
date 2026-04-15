@@ -9,7 +9,7 @@ const FriendsData = () => {
 
     if (loading) {
         return (
-            <div className="flex justify-center items-center pt-43">
+            <div className="flex justify-center items-center py-43">
                 <Grid/>
             </div>
         );

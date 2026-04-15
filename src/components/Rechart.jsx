@@ -1,6 +1,7 @@
 'use client'
 
 import { FriendContext } from '@/Context/FriendsContextProvider';
+import NoSelectedData from '@/Ui/NoSelectedData';
 import { useContext } from 'react';
 import { PieChart, Pie, Tooltip, Legend } from 'recharts';
 
@@ -20,17 +21,22 @@ const Dashboard = () => {
 
     return (
         <div className="flex justify-center items-center h-[400px] shadow-sm bg-gray-100">
-            <PieChart width={300} height={320}>
-                <Pie
-                    data={datas}
-                    dataKey="value"
-                    innerRadius={90}
-                    outerRadius={140}
-                    paddingAngle={5}
-                />
-                <Tooltip />
-                <Legend />
-            </PieChart>
+            {
+                textCount === 0 && callCount === 0 && videoCount === 0
+                    ? <NoSelectedData/>
+                    : <PieChart width={300} height={320}>
+                        <Pie
+                            data={datas}
+                            dataKey="value"
+                            innerRadius={90}
+                            outerRadius={140}
+                            paddingAngle={5}
+                        />
+                        <Tooltip />
+                        <Legend />
+                    </PieChart>
+            }
+
         </div>
     );
 };
