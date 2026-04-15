@@ -20,7 +20,7 @@ const TimeLinePage = () => {
 
     };
 
-    const handleSubmit = (e) => {
+    const handleSearch = (e) => {
         e.preventDefault();
 
         const formData = new FormData(e.target);
@@ -48,12 +48,10 @@ const TimeLinePage = () => {
             {
                 timeLinelData.length === 0
                     ? <NoSelectedData />
-                    : <>
+                    : <div >
                         <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4">
 
-
-
-                            <form onSubmit={handleSubmit} className="flex w-full md:w-auto">
+                            <form onSubmit={handleSearch} className="flex w-full md:w-auto">
                                 <input
                                     className="input w-full md:w-auto"
                                     type="text"
@@ -114,7 +112,7 @@ const TimeLinePage = () => {
                                     </div>
                                 )
                         }
-                    </>
+                    </div>
             }
 
 
