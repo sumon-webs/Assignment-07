@@ -27,3 +27,8 @@
 - 🎴 Interactive Friend Cards
 - 📊 Smart Timeline Management
 - 📈 Visual Insights with Charts
+- 
+- ---
+
+## 🌐 Live Demo
+👉 [https://your-live-link.com  ](https://news-baliadangi.vercel.app/news/category/01](https://assignment-07-liart-ten.vercel.app/timeLine))
